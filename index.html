@@ -1,0 +1,321 @@
+<html>
+   <meta charset='UTF-8'/>
+   <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+   <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+   <head>
+      <title>irwanx membucin</title>
+   </head>
+   <style>
+      :root {
+      --warna-bg: rgba(0, 0, 0, .15); 
+      --warna-teks: white;
+      --bingkai: 5px;
+      }
+      body{background-color:#101010;font-family: 'Ubuntu', sans-serif;padding: 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
+      body::before{content:"\00A9  instagram.com/irwan_x_yans";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;}
+      #bodyblur{opacity:1;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;}
+      @keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
+      #bodyblur img{animation-name:jj;animation-duration: 5s;animation-iteration-count: infinite;}
+      @keyframes leaves {0% {transform: scale(1.0);} 100% {transform: scale(.8);}}
+      #lope, .lopdeg{animation: leaves 1s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
+      .lovein:hover{transform: scale(1.3);}
+      @keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+      blockquote{opacity:0;visibility:hidden;transition:all 1s ease;position:relative;margin-top:120px;margin-left:0;margin-right:0;}
+      blockquote{width:400px;background:var(--warna-bg);color:var(--warna-teks);font-size:18px;font-weight:700;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;line-height:1.3em;padding:16px 35px 16px 35px;border: 1px solid var(--warna-teks);border-radius:var(--bingkai);}
+      blockquote p:first-child{font-size:18px;font-weight:700;text-align:center;}
+      p{margin:1.5em 0;transition:all .3s ease;}
+      #bq img{display:none;width:120px;height:120px;margin:20px 0 0 0;}
+      #bq img:first-child{display:inline-flex}
+      #akhiran{display:none;color:#FFC700;font-size:12px;text-align:center;background:rgba(0,0,0,.55);text-shadow: 0px;padding:10px;border-radius:var(--bingkai);line-height:10px;transition:all .2s ease;} #akhiran:hover{transform: scale(.9);opacity:.5;}
+      #pergeseran{opacity:0;visibility:hidden;transition:all 1s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;position:relative;max-width:500px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+      #pergeseran p{background:#003A76;color:white;border: 1px dashed #fff;border-radius:8px;padding:8px;display:flex;flex-wrap:nowrap;text-align:center;font-size:16px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0; width:90%; min-height:130px;margin:0 15px 0 0; scroll-snap-align:center} #pergeseran > *:last-child{margin-right:0} #pergeseran:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
+      #pergeseran p b{display:block;} #pergeseran p b img{width:80px;height:80px;margin:20px 0;}
+      /*#pergeseran p b span{display:flex;}*/
+      #tm{color:#FFB400;transition:all .5s ease;} #tm:hover{transform: scale(.7);}
+      #idgeser{position:relative;top:30vh;font-size:17px;color:white}
+      #contTom{margin:0;display:flex;align-items:left;list-style:none}
+      .button{display:inline-flex;align-items:center; margin:0;margin:12px 8px 12px 0;transition:all .3s ease;padding:10px 15px;outline:0;border:1px solid var(--warna-teks); border-radius:var(--bingkai);line-height:20px;background:var(--warna-bg);color:var(--warna-teks);font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;z-index:1} 
+      .button:hover{transform: scale(.90);opacity:.98;}
+      #buttonv2{position:absolute;font-size:15px;color:white;background:var(--warna-bg);padding:10px;border-radius:8px;line-height:10px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);opacity:0}
+      .lovein{font-size:50px;display:flex;align-items:center;justify-content:center;transition:all .3s ease;}
+      .lovein svg{width:80px;height:80px;fill:#fefefe}
+      .content2{display:block;text-align:center;width:100%;height:180px;margin-top:50px;}
+      .content2 > *{display:flex;align-items:center;justify-content:center;margin-top:15px;font-size:17px;color:white}
+      .image img{border-radius:10%;transform:scale(.1);transition:all .8s ease;}
+      #k2 .image > *{margin-bottom:40px;} #k2{font-weight:700;font-size:17px;color:white;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);} #final1{transition:all 3s ease;}
+      #idkirim{font-size:13px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;transition:all .5s ease;}
+      #idkirim{opacity:0;visibility:hidden;margin-top:100px} #idkirim:hover{transform:scale(.8);}
+      .content2{display:none;}
+      #Content, #k2{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all 1.8s ease;}
+      #Content > *, #k2 > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:15px;}
+      #k2, #final1{transform:scale(.1);}
+      .swal2-title{margin-right:20px;margin-left:20px;font-size:20px;text-align:center;padding:15px 30px 0 30px;}
+      .swal2-modal{background:rgba(255, 255, 255, .99);border: .7px solid #000;border-radius:var(--bingkai);top:-60px;}
+      .fa-heart {opacity:.3;color:white;font-size: 30px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+      @keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+   </style>
+   <body>
+      <div id="bodyblur"><img id="wallpaper" src="" width="100%" height="100%"/></div>
+      <div id='Content'>
+         <div>
+            <blockquote id='bq'>
+               <img id="foto1" src=""/>
+               <p id="katakata"></p>
+               <p id="katabawah"></p>
+               <p id="akhiran" onClick="menuju();">[ Kirim WhatsApp ]</p>
+            </blockquote>
+         </div>
+      </div>
+      <script>
+         const _0x181b3b = _0x6ce0;
+         
+         function _0x6ce0(_0x71de3b, _0xa23288) {
+             const _0x2acf4a = _0x2acf();
+             return _0x6ce0 = function(_0x6ce06d, _0x3c9631) {
+                 _0x6ce06d = _0x6ce06d - 0x115;
+                 let _0x228df5 = _0x2acf4a[_0x6ce06d];
+                 return _0x228df5;
+             }, _0x6ce0(_0x71de3b, _0xa23288);
+         }(function(_0x2d5e41, _0x4c6f4d) {
+             const _0x5be046 = _0x6ce0,
+                 _0x17c0fe = _0x2d5e41();
+             while (!![]) {
+                 try {
+                     const _0x884534 = parseInt(_0x5be046(0x128)) / 0x1 + parseInt(_0x5be046(0x11b)) / 0x2 + parseInt(_0x5be046(0x11d)) / 0x3 + -parseInt(_0x5be046(0x125)) / 0x4 * (parseInt(_0x5be046(0x129)) / 0x5) + -parseInt(_0x5be046(0x118)) / 0x6 * (parseInt(_0x5be046(0x119)) / 0x7) + parseInt(_0x5be046(0x117)) / 0x8 + -parseInt(_0x5be046(0x120)) / 0x9;
+                     if (_0x884534 === _0x4c6f4d) break;
+                     else _0x17c0fe['push'](_0x17c0fe['shift']());
+                 } catch (_0x2ac8d0) {
+                     _0x17c0fe['push'](_0x17c0fe['shift']());
+                 }
+             }
+         }(_0x2acf, 0x2da70));
+         const body = document['querySelector'](_0x181b3b(0x11a));
+         
+         function _0x2acf() {
+             const _0x2df3aa = ['1014267pGhTVz', 'div', 'appendChild', '3634047ADncMG', 'fas\x20fa-heart', 'style', '.fa-heart', 'animationDuration', '196rXQRqa', 'querySelectorAll', 'createElement', '96785PnecCJ', '16715KAZbVw', 'random', 'length', '2954016eAQHYF', '24246weuXWO', '301mYsBNA', 'body', '248438XBpGRR', 'left'];
+             _0x2acf = function() {
+                 return _0x2df3aa;
+             };
+             return _0x2acf();
+         }
+         
+         function createHeart() {
+             const _0x495cdb = _0x181b3b,
+                 _0x5869da = document[_0x495cdb(0x127)](_0x495cdb(0x11e));
+             _0x5869da['className'] = _0x495cdb(0x121), _0x5869da[_0x495cdb(0x122)][_0x495cdb(0x11c)] = Math['random']() * 0x5a + 'vw', _0x5869da[_0x495cdb(0x122)][_0x495cdb(0x124)] = Math[_0x495cdb(0x115)]() * 0x3 + 0x2 + 's', body[_0x495cdb(0x11f)](_0x5869da);
+         }
+         setInterval(function name(_0x126754) {
+             const _0x2cc88c = _0x181b3b;
+             var _0x2663e5 = document[_0x2cc88c(0x126)](_0x2cc88c(0x123));
+             _0x2663e5[_0x2cc88c(0x116)] > 0x64 && _0x2663e5[0x0]['remove']();
+         }, 0x64);
+      </script>
+      <script>
+         (function(_0xad2620, _0x104880) {
+             var _0x194ff2 = _0xad0e,
+                 _0x436842 = _0xad2620();
+             while (!![]) {
+                 try {
+                     var _0x4a44ec = parseInt(_0x194ff2(0x14c)) / 0x1 * (parseInt(_0x194ff2(0x15c)) / 0x2) + -parseInt(_0x194ff2(0x140)) / 0x3 * (-parseInt(_0x194ff2(0x15a)) / 0x4) + -parseInt(_0x194ff2(0x147)) / 0x5 * (parseInt(_0x194ff2(0x151)) / 0x6) + -parseInt(_0x194ff2(0x14f)) / 0x7 + parseInt(_0x194ff2(0x153)) / 0x8 + -parseInt(_0x194ff2(0x13d)) / 0x9 * (-parseInt(_0x194ff2(0x141)) / 0xa) + -parseInt(_0x194ff2(0x14a)) / 0xb;
+                     if (_0x4a44ec === _0x104880) break;
+                     else _0x436842['push'](_0x436842['shift']());
+                 } catch (_0x226bdc) {
+                     _0x436842['push'](_0x436842['shift']());
+                 }
+             }
+         }(_0x4232, 0xb943f));
+         
+         function nonFo() {
+             var _0x2b86e6 = _0xad0e;
+             document[_0x2b86e6(0x155)](_0x2b86e6(0x148))[_0x2b86e6(0x143)][_0x2b86e6(0x14d)] = _0x2b86e6(0x150);
+         }
+         
+         function showFo() {
+             var _0xf934f5 = _0xad0e;
+             document[_0xf934f5(0x155)](_0xf934f5(0x148))[_0xf934f5(0x143)][_0xf934f5(0x14d)] = _0xf934f5(0x152);
+         }
+         
+         function nonDiv() {
+             var _0x3f84a1 = _0xad0e;
+             document[_0x3f84a1(0x155)](_0x3f84a1(0x156))['style'] = _0x3f84a1(0x149);
+         }
+         
+         function showDiv() {
+             var _0x54281a = _0xad0e;
+             setTimeout(kpemb, 0x64), document[_0x54281a(0x155)]('Content')[_0x54281a(0x143)] = _0x54281a(0x144), document[_0x54281a(0x155)](_0x54281a(0x15b))[_0x54281a(0x13e)] = kata1;
+         }
+         
+         function loadfoto() {
+             var _0x337366 = _0xad0e;
+             document[_0x337366(0x155)](_0x337366(0x13f))[_0x337366(0x159)] = gambar1;
+         }
+         
+         function showAkhir() {
+             var _0x3d877b = _0xad0e;
+             setInterval(createHeart, 0xc8), document['getElementById']('k2')[_0x3d877b(0x143)] = _0x3d877b(0x142), document['getElementById'](_0x3d877b(0x158))[_0x3d877b(0x143)] = 'transform:scale(1);', document[_0x3d877b(0x155)]('final1')[_0x3d877b(0x143)] = _0x3d877b(0x157), document['getElementById'](_0x3d877b(0x156))['style'][_0x3d877b(0x14d)] = _0x3d877b(0x150);
+         }
+         
+         function _0x4232() {
+             var _0x11fa46 = ['opacity:1;visibility:visible;margin-top:0', 'getElementById', 'Content', 'transform:scale(1);', 'ftdua', 'src', '752ozoOfc', 'katakata', '85360BXImcq', '9RelmWu', 'innerHTML', 'foto1', '17583ldXOqG', '4462330cUhWtT', 'opacity:1;transform:scale(1);margin:0;', 'style', 'opacity:1;margin-top:4vh;animation:kont\x203s\x20infinite;', 'akhiran', 'opacity:1;visibility:visible;margin-top:140px;', '75bPQWss', 'idfoto', 'opacity:0;visibility:hidden;margin-top:30vh;', '15264205AUqpOV', 'display:none', '21bSACom', 'display', 'transform:scale(.01);', '4165903NKiqIS', 'none', '40302OUYgEK', 'block', '3184040WuxuAi'];
+             _0x4232 = function() {
+                 return _0x11fa46;
+             };
+             return _0x4232();
+         }
+         
+         function mulaiakhir() {
+             nonDiv(), setTimeout(showAkhir, 0x578), setTimeout(finalis, 0x960);
+         }
+         
+         function showTom() {
+             var _0x5d3174 = _0xad0e;
+             document[_0x5d3174(0x155)]('idkirim')[_0x5d3174(0x143)] = _0x5d3174(0x146);
+         }
+         
+         function tombol() {
+             var _0x4da358 = _0xad0e;
+             contTom[_0x4da358(0x143)] = 'display:flex';
+         }
+         
+         function _0xad0e(_0x1bc596, _0x2787b8) {
+             var _0x4232ac = _0x4232();
+             return _0xad0e = function(_0xad0e88, _0x264bb4) {
+                 _0xad0e88 = _0xad0e88 - 0x13d;
+                 var _0x34eabc = _0x4232ac[_0xad0e88];
+                 return _0x34eabc;
+             }, _0xad0e(_0x1bc596, _0x2787b8);
+         }
+         
+         function akhiran() {
+             var _0x179b13 = _0xad0e;
+             document['getElementById'](_0x179b13(0x145))['style'] = 'display:inline-flex';
+         }
+         
+         function otomatis() {
+             var _0x169760 = _0xad0e;
+             befanimkata(), setTimeout(animkata, 0x190), contTom[_0x169760(0x143)] = _0x169760(0x14b), setTimeout(tombol, 0x1f4);
+         }
+         
+         function befanimkata() {
+             var _0x1a4274 = _0xad0e;
+             katakata[_0x1a4274(0x143)] = _0x1a4274(0x14e), katabawah[_0x1a4274(0x143)] = _0x1a4274(0x14e);
+         }
+         
+         function animkata() {
+             var _0x51eed8 = _0xad0e;
+             katakata['style'] = _0x51eed8(0x157), katabawah['style'] = 'transform:scale(1);';
+         }
+         
+         function animakhir() {
+             var _0x419565 = _0xad0e;
+             akhiran[_0x419565(0x143)] = 'display:block;';
+         }
+         
+         function kpemb() {
+             var _0x3a1193 = _0xad0e;
+             setTimeout(akhiran, 0x10cc), setInterval(createHeart, 0xc8), document[_0x3a1193(0x155)]('bq')['style'] = _0x3a1193(0x154);
+         }
+           
+      </script>
+      <script type="text/javascript">
+         var _0x345a02 = _0x5f12;
+         (function(_0x4cb333, _0x46f060) {
+             var _0x1a5672 = _0x5f12,
+                 _0x4b7465 = _0x4cb333();
+             while (!![]) {
+                 try {
+                     var _0x2107a7 = -parseInt(_0x1a5672(0x1b0)) / 0x1 + -parseInt(_0x1a5672(0x185)) / 0x2 * (-parseInt(_0x1a5672(0x19e)) / 0x3) + -parseInt(_0x1a5672(0x19a)) / 0x4 * (-parseInt(_0x1a5672(0x19d)) / 0x5) + -parseInt(_0x1a5672(0x19f)) / 0x6 * (parseInt(_0x1a5672(0x188)) / 0x7) + parseInt(_0x1a5672(0x1ac)) / 0x8 * (parseInt(_0x1a5672(0x191)) / 0x9) + -parseInt(_0x1a5672(0x1ad)) / 0xa * (parseInt(_0x1a5672(0x1ae)) / 0xb) + parseInt(_0x1a5672(0x195)) / 0xc * (parseInt(_0x1a5672(0x18a)) / 0xd);
+                     if (_0x2107a7 === _0x46f060) break;
+                     else _0x4b7465['push'](_0x4b7465['shift']());
+                 } catch (_0x36f5c1) {
+                     _0x4b7465['push'](_0x4b7465['shift']());
+                 }
+             }
+         }(_0x5da9, 0x4aec3));
+         const swals = Swal[_0x345a02(0x186)]({
+                 'allowOutsideClick': ![],
+                 'cancelButtonColor': _0x345a02(0x194)
+             }),
+             swalsy = Swal['mixin']({
+                 'confirmButtonText': _0x345a02(0x18e),
+                 'allowOutsideClick': ![]
+             }),
+             swalst = Swal[_0x345a02(0x186)]({
+                 'allowOutsideClick': ![],
+                 'showConfirmButton': ![],
+                 'timer': 0x9c4,
+                 'timerProgressBar': !![]
+             });
+         var today = new Date(),
+             dd = String(today[_0x345a02(0x199)]())[_0x345a02(0x189)](0x2, '0'),
+             mm = String(today[_0x345a02(0x18c)]() + 0x1)[_0x345a02(0x189)](0x2, '0'),
+             yyyy = today[_0x345a02(0x1a5)]();
+         const monthNames = [_0x345a02(0x192), _0x345a02(0x18f), 'Maret', 'April', _0x345a02(0x1aa), _0x345a02(0x1a3), 'Juli', _0x345a02(0x1a1), _0x345a02(0x1a0), _0x345a02(0x18b), _0x345a02(0x197), _0x345a02(0x1a2)];
+         today = dd + '\x20' + monthNames[today[_0x345a02(0x18c)]()] + '\x20' + yyyy;
+         
+         function play() {
+             var _0x2a72f7 = _0x345a02,
+                 _0x474840 = new Audio('' + linklagu);
+             _0x474840[_0x2a72f7(0x1a4)]();
+         }
+         
+         function _0x5da9() {
+             var _0x53c765 = ['Kirim\x20pesan\x20ke\x20WhatsApp\x20aku,\x20ya!', 'Aww\x20awww\x20><', 'Mei', 'Aduhh\x20ko\x20aku\x20pusing\x20banget\x20ya', '328qJGvqL', '700GDjzpt', '37708anOyrv', 'Serius\x20pusing\x20banget', '232010KHJPoT', '2EshKkw', 'mixin', 'https://i.ibb.co/cvZxdnR/aduh.gif', '1337UbQHvS', 'padStart', '3819959WPoylD', 'Oktober', 'getMonth', 'https://Aduh.feeldream.repl.co/lagu.mp3', 'Iya', 'Februari', 'https://wa.me/628882611841?text=', '70083vDRdGV', 'Januari', 'location', '#FF0040', '24DTRGtC', 'https://i.ibb.co/9G58wW9/serius.gif', 'November', 'https://i.ibb.co/K5mpjXT/mikirin.gif', 'getDate', '196492dLpJky', 'Hehehe\x20&#10084;', 'fire', '5OUqJPM', '1282449eDYVAo', '18996AMLANM', 'September', 'Agustus', 'Desember', 'Juni', 'play', 'getFullYear', 'Sekarang\x20lihat\x20ini\x20ya~', 'https://i.ibb.co/P9Z7Zw5/milik.gif'];
+             _0x5da9 = function() {
+                 return _0x53c765;
+             };
+             return _0x5da9();
+         }
+         async function menuju() {
+             var _0x5165cc = _0x345a02;
+             await swals['fire'](_0x5165cc(0x1a8)), window[_0x5165cc(0x193)] = _0x5165cc(0x190) + pesanwhatsapp, setTimeout(maubucin, 0xdac);
+         }
+         async function apapun() {
+             var _0x59788f = _0x345a02;
+             wallpaper['src'] = 'https://i.ibb.co/RHX7gKn/Remini20220327124835792.jpg', linklagu = _0x59788f(0x18d), await swals[_0x59788f(0x19c)](_0x59788f(0x1a6)), play(), await swalst[_0x59788f(0x19c)]({
+                 'title': _0x59788f(0x1ab),
+                 'imageUrl': _0x59788f(0x187),
+                 'imageWidth': 0xa0,
+                 'imageHeight': 0xa0,
+                 'allowOutsideClick': ![],
+                 'showCancelButton': ![]
+             }), await swalst[_0x59788f(0x19c)]({
+                 'title': _0x59788f(0x1af),
+                 'imageUrl': _0x59788f(0x196),
+                 'imageWidth': 0xa0,
+                 'imageHeight': 0xa0,
+                 'allowOutsideClick': ![],
+                 'showCancelButton': ![]
+             }), await swalst[_0x59788f(0x19c)]({
+                 'title': 'Pusing\x20mikirin\x20gimana\x20caranya',
+                 'imageUrl': _0x59788f(0x198),
+                 'imageWidth': 0xa0,
+                 'imageHeight': 0xa0,
+                 'allowOutsideClick': ![],
+                 'showCancelButton': ![]
+             }), await swalst[_0x59788f(0x19c)]({
+                 'title': 'Biar\x20kamu\x20jadi\x20milik\x20aku',
+                 'imageUrl': _0x59788f(0x1a7),
+                 'imageWidth': 0xa0,
+                 'imageHeight': 0xa0,
+                 'allowOutsideClick': ![],
+                 'showCancelButton': ![]
+             }), gambar1 = 'https://i.ibb.co/hKX6gdT/hehehe.gif', kata1 = _0x59788f(0x19b), pesanwhatsapp = _0x59788f(0x1a9), showDiv(), loadfoto();
+         }
+         
+         function _0x5f12(_0x200854, _0x5c39dd) {
+             var _0x5da917 = _0x5da9();
+             return _0x5f12 = function(_0x5f12f7, _0x1a0999) {
+                 _0x5f12f7 = _0x5f12f7 - 0x185;
+                 var _0x3fbb0e = _0x5da917[_0x5f12f7];
+                 return _0x3fbb0e;
+             }, _0x5f12(_0x200854, _0x5c39dd);
+         }
+         apapun();
+      </script>
+   </body>
+</html>
